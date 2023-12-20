@@ -1,3 +1,9 @@
+Affected Product: Cuppa CMS
+Affected Version: Cuppa CMS V1.0
+CVE ID: CVE-2023-47790
+Vulnerability Type: SQL Injection
+Root Cause: Unauthorized access to interface files, where user input is concatenated into SQL statements without any processing.
+
 cuppacms is vulnerable to SQL Injection via components/table_manager/html/edit_admin_table.php.
 The parameter tables is not sanitized correctly. The malicious actor can use this vulnerability to manipulate the administrator account of the systemand can take full control of the information about the other accounts.
 ```
